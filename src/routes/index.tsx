@@ -1,23 +1,12 @@
-import React, { FunctionComponent, lazy, Suspense } from 'react';
-import { Spin } from 'antd';
-import { Routes, Route } from 'react-router-dom';
+import React, { FunctionComponent } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-import Home from './Home';
-
-const About = lazy(() => import('./About'));
+import Home from './Home'
 
 const Router: FunctionComponent = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route
-      path="about"
-      element={
-        <Suspense fallback={<Spin />}>
-          <About />
-        </Suspense>
-      }
-    />
   </Routes>
-);
+)
 
-export default Router;
+export default Router

@@ -1,12 +1,4 @@
-import React from 'react';
-import Counter from '../../components/partials/Home/Counter';
-import Quote from '../../components/shareds/Quote';
+import React from 'react'
 
-const Home = () => (
-  <div className="Home">
-    <Counter />
-    <Quote />
-  </div>
-);
-
-export default Home;
+const Home = () => <div className="Home">Sou a home</div>
+export default Home

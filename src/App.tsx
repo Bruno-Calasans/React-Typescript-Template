@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Router from './routes';
-import './styles/vendors.scss';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Router from './routes'
 
 const App = () => (
   <div className="App">
@@ -11,13 +10,10 @@ const App = () => (
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
       </ul>
       <Router />
     </main>
   </div>
-);
+)
 
-export default App;
+export default App
